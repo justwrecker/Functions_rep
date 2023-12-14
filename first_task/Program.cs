@@ -1,5 +1,4 @@
-﻿using System.ComponentModel;
-using System.Reflection.Metadata.Ecma335;
+﻿
 
 int[,] InitArray(int x, int y, int min, int max)
 {
