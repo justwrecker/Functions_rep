@@ -27,22 +27,16 @@ void PrintArray(int[,] array)
 void ChangeLines(int[,] array)
 {
     int[] tempLine = new int[array.GetLength(1)];
-    for(int i=0;i<array.GetLength(1);i++)
-    {tempLine[i]= array[0,i];
-    array[0,i]=array[array.GetLength(1)-1,i];
-    array[array.GetLength(1)-1,i]= tempLine[i];
-     }
+    for (int i = 0; i < array.GetLength(1); i++)
+    {
+        tempLine[i] = array[0, i];
+        array[0, i] = array[array.GetLength(0) - 1, i];
+        array[array.GetLength(0) - 1, i] = tempLine[i];
+    }
 
 }
 
-
-
-
-
-
-
-
-int[,] theArray = InitArray(5,5,5,10);
+int[,] theArray = InitArray(5, 13, 5, 10);
 PrintArray(theArray);
 ChangeLines(theArray);
 System.Console.WriteLine("\n");
