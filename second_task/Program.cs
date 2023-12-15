@@ -36,7 +36,7 @@ void ChangeLines(int[,] array)
 
 }
 
-int[,] theArray = InitArray(5, 13, 5, 10);
+int[,] theArray = InitArray(2, 4, 5, 10);
 PrintArray(theArray);
 ChangeLines(theArray);
 System.Console.WriteLine("\n");
