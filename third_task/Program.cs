@@ -54,6 +54,6 @@ int FindLineWithMinSumOfElements(int[,] array)
     return lineNumber;
 }
 
-int[,] matrix = InitArray(4, 5, 0, 11);
+int[,] matrix = InitArray(15, 13, 0, 11);
 PrintArray(matrix);
 System.Console.WriteLine("\n строка с минимальной суммой элементов имеет индекс " + FindLineWithMinSumOfElements(matrix));
